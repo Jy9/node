@@ -1,0 +1,13 @@
+{
+    "apps" : [{
+        "name"        : "proxy",
+        "script"      : "./proxy.js",
+		"instances" : "max",
+		"exec_mode":"cluster"
+    },{
+        "name"       : "api-app",
+        "script"     : "./app.js",
+		"instances" : "max",
+		"exec_mode":"cluster"
+    }]
+}
