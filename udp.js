@@ -16,4 +16,4 @@ server.on('listening', () => {
   console.log(`服务器监听 ${address.address}:${address.port}`);
 });
 
-server.bind(10102,'locahost')
+server.bind(10102,'localhost')
