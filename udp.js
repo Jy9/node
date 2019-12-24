@@ -18,9 +18,9 @@ server.on('listening', () => {
 
 server.bind(10102)
 
-// const Koa = require('koa2')
-// const app = new Koa()
+const Koa = require('koa2')
+const app = new Koa()
 
-// app.listen(10101,() => {
-// 	console.log("ok")
-// })
+app.listen(10102,() => {
+	console.log("ok")
+})
