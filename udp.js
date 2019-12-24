@@ -16,7 +16,7 @@ server.on('listening', () => {
   console.log(`服务器监听 ${address.address}:${address.port}`);
 });
 
-server.bind(10101,'106.13.188.176')
+server.bind(10102,'106.13.188.176')
 
 // const Koa = require('koa2')
 // const app = new Koa()
