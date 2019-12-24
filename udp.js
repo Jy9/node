@@ -24,3 +24,6 @@ const app = new Koa()
 app.listen(10102,() => {
 	console.log("ok")
 })
+app.get('/',() => {
+	console.log("asd")
+})
