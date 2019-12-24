@@ -8,7 +8,7 @@ server.on('error', (err) => {
 
 server.on('message', (msg, rinfo) => {
   console.log(`服务器接收到来自 ${rinfo.address}:${rinfo.port} 的 ${msg}`);
-  //server.send('lalala')
+  server.send('lalala',rinfo.port,rinfo.address)
 });
 
 server.on('listening', () => {
@@ -16,4 +16,4 @@ server.on('listening', () => {
   console.log(`服务器监听 ${address.address}:${address.port}`);
 });
 
-server.bind('106.13.188.176',8888);
+server.bind(8888);
