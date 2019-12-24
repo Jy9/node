@@ -16,14 +16,4 @@ server.on('listening', () => {
   console.log(`服务器监听 ${address.address}:${address.port}`);
 });
 
-server.bind(10102)
-
-const Koa = require('koa2')
-const app = new Koa()
-
-app.listen(10102,() => {
-	console.log("ok")
-})
-app.use(() => {
-	console.log("asd")
-})
+server.bind(10102,'locahost')
